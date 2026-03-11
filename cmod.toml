@@ -1,0 +1,16 @@
+[package]
+name = "github.com/catchorg/Catch2"
+version = "3.13.0"
+edition = "2023"
+description = "A modern C++ test framework"
+authors = ["Catch2 Authors"]
+license = "BSL-1.0"
+
+[toolchain]
+compiler = "clang"
+cxx_standard = "20"
+
+[build]
+type = "static-lib"
+sources = ["src/catch2", "src/catch2/benchmark", "src/catch2/benchmark/detail", "src/catch2/generators", "src/catch2/interfaces", "src/catch2/internal", "src/catch2/matchers", "src/catch2/reporters"]
+include_dirs = ["src"]
